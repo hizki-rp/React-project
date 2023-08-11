@@ -14,13 +14,13 @@ function Header(){
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">contact</a>
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">About</a>
           </li>
         </ul>
       </div>
