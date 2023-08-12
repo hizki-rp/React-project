@@ -5,7 +5,7 @@ import {Navbar, Container} from 'bootstrap';
 
 function App() {
   return (
-    <div className="App">
+   
       <NavBar/>
    
   );

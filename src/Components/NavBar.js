@@ -1,30 +1,52 @@
+import {useState, useEffect} from "react";
+import {Navbar, Container, Nav} from "react-bootstrap";
+ const NavBar = () => {
+   const [activeLink, setActiveLink] = useState('home');
+   const [scolled, seScrolled] = useState(false);
 
-function NavBar(){
-    return (
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    );
-  }
-  export default NavBar;
+      useEffect(() => {
+         const onScroll = () => {
+          if (window.scrollY > 50){
+            seScrolled(true);
+          }
+          else{
+            seScrolled(false);
+          }
+         }
+
+         window.addEventListener("scroll", onScroll);
+         return () => window.removeEventListener("scroll", onScroll);
+      }, [])
+        
+      
+  return(
+    <Navbar expand="lg" className={scolled ? "scrolled" : ""}>
+           <Container>
+              <Navbar.Brand href="#home">
+                 <img src={''} alt="logo"/>
+                 </Navbar.Brand>
+                 <Navbar.Toggle aria-controls="basic-navbar-nav">
+                  <span className="navbar-toggler-icon"> </span>
+                  </Navbar.Toggle>
+                  <Navbar.Collapse id="basic-navbar-nav">
+                     <Nav className="me-auto">
+                       <Nav.Link href="#home">Home</Nav.Link>
+                       <Nav.Link href="#home">Skills</Nav.Link>
+                       <Nav.Link href="#home">Projects</Nav.Link>
+                     </Nav>
+                     <span className="navbar-text">
+                       <div className="social-icon">
+                        <a href="#">linkedln<img src={""} alt=""/></a>
+                        <a href="#">twitter<img src={""} alt=""/></a>
+                        <a href="#">github<img src={""} alt=""/></a>
+                       </div>
+                       <button className="vvd" onClick={() => console.log('connect')}></button>
+                     </span>
+                  </Navbar.Collapse>
+           </Container>
+    </Navbar>
+  )
+}
+export default NavBar;
+   
+  
