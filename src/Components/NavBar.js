@@ -1,66 +1,45 @@
-import {useState, useEffect} from "react";
-import {Navbar, Container, Nav} from "react-bootstrap";
-
-import logo from './log.png';
-import navIcon1 from './log.png';
-import navIcon2 from './log.png';
-import navIcon3 from './log.png';
-
- const NavBar = () => {
-   const [activeLink, setActiveLink] = useState('home');
-   const [scrolled, seScrolled] = useState(false);
-
-      useEffect(() => {
-         const onScroll = () => {
-          if (window.scrollY > 50){
-            seScrolled(true);
-          }
-          else{
-            seScrolled(false);
-          }
-         }
-
-         window.addEventListener("scroll", onScroll);
-         return () => window.removeEventListener("scroll", onScroll);
-      }, [])
-
-      const onUpdateActiveLink = (value) => {
-          setActiveLink(value);
-      }
+import React from 'react';
+import './navbar.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+const NavBar = () => {
+  return (
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+  <div class="container-fluid m-3">
+  <a class="navbar-brand logo " href="#">HZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <FontAwesomeIcon icon={faBars} style={{color: "#fff;"}}/>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto m-3 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">Tech-stack</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">contact</a>
+        </li>
+       
         
       
-  return(
-    
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-     
-           <Container>
-              <Navbar.Brand href="#home">
-                 <img src={logo} alt="logo"/>
-                 </Navbar.Brand>
-                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                  <span className="navbar-toggler-icon"> </span>
-                  </Navbar.Toggle>
-                  <Navbar.Collapse id="basic-navbar-nav">
-                     <Nav className="me-auto">
-                       <Nav.Link href="#home" className={activeLink === 'home' ? 'active navba-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                       <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navba-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                       <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navba-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-                     </Nav>
-                     <span className="navbar-text">
-                       <div className="social-icon">
-                        <a href="#"><img src={navIcon1} alt=""/></a>
-                        <a href="#"><img src={navIcon2} alt=""/></a>
-                        <a href="#"><img src={navIcon3} alt=""/></a>
-                       </div>
-                       <button className="vvd" onClick={() => console.log('connect')}></button>
-                     </span>
-                  </Navbar.Collapse>
-           </Container>
-    </Navbar>
-
-    
+      </ul>
+      
+    </div>
+  </div>
+</nav>
   )
 }
+
 export default NavBar;
-   
-  

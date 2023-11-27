@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Smooch+Sans:wght@100&display=swap');
+
+.navbar{
+    background-image: linear-gradient(to right, darkslategray, rgb(19, 18, 18));
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+  }
+.navbar-nav .nav-item a{
+    cursor: pointer;
+    letter-spacing: 0.04999rem; 
+    text-transform: uppercase;
+    border-bottom: 0.01rem solid rgb(255, 255, 255, 0);
+}
+/* ----Add margin to nav links when size is large -----*/
+@media (min-width: 730px) {
+   .navbar-nav li{
+  margin: 0 10rem 0 -8rem;
+}
+  }
+
+
+  .navbar-nav .nav-item a:hover{
+    border-bottom: 0.01rem solid rgb(0, 145, 101);
+   
+    
+}  
+.navbar-nav .nav-item a:active{
+    border-bottom: 0.01rem solid rgb(163, 3, 163);
+   
+    
+}  
+
+
