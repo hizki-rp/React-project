@@ -1,5 +1,9 @@
 body{
   font-family: Rajdhani !important;
   font-size: 1.09rem !important;
-  background-color: rgb(20, 19, 19) !important;
+  background-color: rgb(19, 19, 19) !important;
+}
+
+.header-wrapper{
+  color: white;
 }
