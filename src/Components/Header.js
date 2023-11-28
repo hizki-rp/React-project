@@ -3,15 +3,16 @@ import tlogo1 from '../assets/javascript.png';
 import tlogo2 from '../assets/react.png';
 import tlogo3 from '../assets/bootstrap.png';
 import tlogo4 from '../assets/github.png';
-import bg from '../assets/download (2).jpeg';
+import bg from '../assets/dfree.jpeg';
 
 
 
 const Header = () => {
   return (
   
+  
     <div className='container container-header'>
-      
+    
         <div className='row'>
             <div className='col'>
                 <h1>Tech Stacks</h1>
