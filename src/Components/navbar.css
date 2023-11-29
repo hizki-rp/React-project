@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Smooch+Sans:wght@100&display=swap');
 
+:root { --color-blue: rgb(194, 252, 255);
+  --color-whiteblueg: rgb(248, 244, 1);
+} 
+
 .navbar{
     background-image: linear-gradient(to right, darkslategray, rgb(19, 18, 18));
     
@@ -15,6 +19,7 @@
     letter-spacing: 0.04999rem; 
     text-transform: uppercase;
     border-bottom: 0.01rem solid rgb(255, 255, 255, 0);
+    color: var(--color-whiteblueg);
 }
 /* ----Add margin to nav links when size is large -----*/
 @media (min-width: 730px) {
@@ -25,7 +30,7 @@
 
 
   .navbar-nav .nav-item a:hover{
-    border-bottom: 0.01rem solid rgb(0, 145, 101);
+    border-bottom: 0.01rem solid var(--color-blue);
    
     
 }  
