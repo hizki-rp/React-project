@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Smooch+Sans:wght@100&display=swap');
 
 :root { --color-blue: rgb(194, 252, 255);
-  --color-whiteblueg: rgb(248, 244, 1);
+  --color-whiteblueg: rgb(255, 223, 82);
 } 
 
 .navbar{
-    background-image: linear-gradient(to right, darkslategray, rgb(19, 18, 18));
-    
+    background-image: linear-gradient(to right, rgb(0, 32, 32), rgb(19, 18, 18));  
  
 }
 .navbar-toggler {

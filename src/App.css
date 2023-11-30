@@ -1,65 +1,66 @@
 :root { --color-blue: rgb(0, 145, 101);
         --color-whiteblueg: rgb(253, 252, 222);
         --color-react: rgb(172, 35, 236);
+        --color-yellow: rgb(255, 223, 82);
 } 
 
 body{
   font-family: Rajdhani !important;
   font-size: 1.09rem !important;
-  background-color: rgb(2, 26, 19) !important;
- 
+  background-color: rgb(0, 15, 12) !important;
 
 }
-body navbar{
-  opacity: 1;
- 
-}
-img{
-  border-radius: 50%;
-  opacity: 0.7;
-}
-.main-info{
-  display:flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.container{
+  margin: 0 auto;
+  margin-top: 5rem;
+  color: var(--color-yellow);
   text-align: center;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+   .container{
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: 1rem;
+   }
+   .main-info h1{
+    font-size: larger;
+  }
+ }
+
+ .profile img{
+ opacity: 0.7;
+ border-radius: 50%;
 }
 
-.container-header{
-  color: var(--color-whiteblueg);
-  text-transform: uppercase;
-
-} 
-.tech-logos{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: flex;
-  flex-wrap: wrap;
+.btn-main{
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 1rem;
+  opacity: 0.9;
+  border: 1px solid var(--color-yellow);
+  border-radius: 2px;
  
 }
+hr{
+ opacity: 0.5;
+
+}
+
 .tech-logos img{
-  width: 5rem;
-  height: 100%;
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  border-radius: 20%;
+
 }
 
 /* ------Header ----Typed Text------*/
 .typed-text{
   font-size: 2rem;
-  color: white;
+  color: var(--color-yellow);
 }
 /* ------Header ----Main button------*/
-.btn-main{
-  color: white;
-  border: 0.1rem solid var(--color-react);
-  text-decoration: none;
-  padding: 0.2rem 1rem;
-  margin: 2rem 0;
-  opacity: 0.93;
-}
