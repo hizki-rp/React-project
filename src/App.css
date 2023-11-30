@@ -1,5 +1,5 @@
 :root { --color-blue: rgb(0, 145, 101);
-        --color-whiteblueg: rgb(253, 252, 222);
+        --color-whiteblueg: rgb(247, 248, 194);
         --color-react: rgb(172, 35, 236);
         --color-yellow: rgb(255, 223, 82);
 } 
@@ -11,30 +11,41 @@ body{
 
 }
 
-.container{
+.container-header{
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 10rem;
   color: var(--color-yellow);
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   opacity: 0.9;
+  height: 100vh;
 }
 @media (max-width: 768px) {
-   .container{
+   .container-header{
      display: grid;
      grid-template-columns: 1fr;
      margin-top: 1rem;
    }
    .main-info h1{
-    font-size: larger;
+   font-size: 3rem;
+   opacity: 0.8;
   }
+  
+   
  }
-
- .profile img{
- opacity: 0.7;
- border-radius: 50%;
+ @media (max-width: 768px) {
+   .container-header{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+   }
+ 
+  
 }
+
+
 
 .btn-main{
   text-decoration: none;
@@ -44,10 +55,6 @@ body{
   border: 1px solid var(--color-yellow);
   border-radius: 2px;
  
-}
-hr{
- opacity: 0.5;
-
 }
 
 .tech-logos img{
@@ -62,5 +69,36 @@ hr{
 .typed-text{
   font-size: 2rem;
   color: var(--color-yellow);
+  
 }
+
 /* ------Header ----Main button------*/
+
+
+
+/* ------About ----Main button------*/
+.container{
+  color: var(--color-whiteblueg);
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.profile{
+    opacity: 0.7;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid blue;
+}
+.about-header{
+  font-size: 5rem;
+}
+.about-row{
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+
