@@ -1,9 +1,88 @@
 :root { --color-blue: rgb(0, 145, 101);
-        --color-whiteblueg: rgb(253, 252, 222);
-        --color-react: rgb(172, 35, 236);
-        --color-yellow: rgb(255, 223, 82);
+  --color-whiteblueg: rgb(253, 252, 222);
+  --color-react: rgb(172, 35, 236);
+  --color-yellow: rgb(255, 223, 82);
 } 
 
 body{
-  font-family: Rajdhani !important;
+font-family: Rajdhani !important;
+font-size: 1.09rem !important;
+background-color: rgb(0, 15, 12) !important;
 
+}
+
+.container-header{
+margin: 0 auto;
+margin-top: 5rem;
+color: var(--color-yellow);
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
+opacity: 0.9;
+height: 80vh;
+
+}
+@media (max-width: 768px) {
+.container-header{
+display: grid;
+grid-template-columns: 1fr;
+margin-top: 1rem;
+height: 93vh;
+}
+.main-info h1{
+font-size: larger;
+}
+}
+@media(max-width: 400px){
+  .container-header{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .profile img{
+    width: 30%;
+    height:
+  }
+}
+
+.btn-main{
+text-decoration: none;
+color: white;
+padding: 0.2rem 1rem;
+opacity: 0.9;
+border: 1px solid var(--color-yellow);
+border-radius: 2px;
+
+}
+hr{
+opacity: 0.5;
+
+}
+
+.tech-logos img{
+width: 2rem;
+height: 2rem;
+margin: 2rem;
+border-radius: 20%;
+
+}
+
+/* ------Header ----Typed Text------*/
+.typed-text{
+font-size: 2rem;
+color: var(--color-yellow);
+}
+/* -----------About-----------*/
+.container{
+  color: var(--color-whiteblueg);
+  margin-bottom: 5rem;
+}
+.profile img{
+  display: flex;
+  justify-content: center;
+  
+  opacity: 0.7;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  }
+    
