@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import tlogo1 from '../assets/javascript.png';
 import tlogo2 from '../assets/react.png';
@@ -51,3 +52,5 @@ const Header = () => {
 }
 
 export default Header;
+=======
+>>>>>>> d242dea538038e018d4c7d5568015d7a3b0008ee
