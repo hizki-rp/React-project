@@ -12,7 +12,6 @@ import Typed from 'react-typed';
 const Header = () => {
   return (
   
-  
     <div className='container-header'>
     
         <div className='main-info'>
@@ -28,26 +27,17 @@ const Header = () => {
                  <img src={tlogo4}></img>
                 
                 </div>
-
-              
-              
                 </div>
-             
-                
-      
+    
         </div>
 
-        
-        
         <Typed className='typed-text'
                 strings={["Front-End Development", "Responsive web design", "UX Design"]}
                 typeSpeed={70}
                 backSpeed={30}
                 loop
                />
-       
     </div>
   )
 }
-
 export default Header;
