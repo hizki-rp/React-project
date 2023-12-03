@@ -7,9 +7,7 @@ const About = () => {
         <div className='row about-row'>
         <div className='col-sm-6 col-xm-12'>
        
-        <div className='profile'>
-            <img src={imgH} width={200} height={199}></img>
-        </div>
+
          
         </div>
         <div className='col-sm-6 col-xm-12 '>
@@ -40,7 +38,7 @@ const About = () => {
             about my work!
             
         </p>
-      
+
         </div>
         </div>
     </div>
@@ -48,3 +46,4 @@ const About = () => {
 }
 
 export default About;
+
