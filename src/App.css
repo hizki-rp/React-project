@@ -1,13 +1,8 @@
 :root { --color-blue: rgb(0, 145, 101);
-<<<<<<< HEAD
-        --color-whiteblueg: rgb(247, 248, 194);
-        --color-react: rgb(172, 35, 236);
-        --color-yellow: rgb(255, 223, 82);
-=======
-  --color-whiteblueg: rgb(253, 252, 222);
+  --color-whiteblueg: rgb(247, 248, 194);
   --color-react: rgb(172, 35, 236);
   --color-yellow: rgb(255, 223, 82);
->>>>>>> d242dea538038e018d4c7d5568015d7a3b0008ee
+
 } 
 
 body{
@@ -18,47 +13,35 @@ background-color: rgb(0, 15, 12) !important;
 }
 
 .container-header{
-<<<<<<< HEAD
-  margin: 0 auto;
-  margin-top: 10rem;
-  color: var(--color-yellow);
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  opacity: 0.9;
-  height: 100vh;
-}
-@media (max-width: 768px) {
-   .container-header{
-     display: grid;
-     grid-template-columns: 1fr;
-     margin-top: 1rem;
-   }
-   .main-info h1{
-   font-size: 3rem;
-   opacity: 0.8;
-  }
-  
-   
- }
- @media (max-width: 768px) {
-   .container-header{
-    font-size: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    
-   }
- 
-  
-=======
 margin: 0 auto;
-margin-top: 5rem;
+margin-top: 10rem;
 color: var(--color-yellow);
 text-align: center;
 display: grid;
 grid-template-columns: 1fr 1fr;
 opacity: 0.9;
-height: 80vh;
+height: 100vh;
+}
+@media (max-width: 768px) {
+.container-header{
+display: grid;
+grid-template-columns: 1fr;
+margin-top: 1rem;
+}
+.main-info h1{
+font-size: 3rem;
+opacity: 0.8;
+}
+
+
+}
+@media (max-width: 768px) {
+.container-header{
+font-size: 1rem;
+display: grid;
+grid-template-columns: 1fr;
+
+}
 
 }
 @media (max-width: 768px) {
@@ -73,20 +56,16 @@ font-size: larger;
 }
 }
 @media(max-width: 400px){
-  .container-header{
-    display: grid;
-    grid-template-columns: 1fr;
+.container-header{
+display: grid;
+grid-template-columns: 1fr;
 
-  }
-  .profile img{
-    width: 30%;
-    height:
-  }
->>>>>>> d242dea538038e018d4c7d5568015d7a3b0008ee
+
 }
 
 
-
+}
+}
 .btn-main{
 text-decoration: none;
 color: white;
@@ -96,13 +75,7 @@ border: 1px solid var(--color-yellow);
 border-radius: 2px;
 
 }
-<<<<<<< HEAD
-=======
-hr{
-opacity: 0.5;
 
-}
->>>>>>> d242dea538038e018d4c7d5568015d7a3b0008ee
 
 .tech-logos img{
 width: 2rem;
@@ -114,58 +87,49 @@ border-radius: 20%;
 
 /* ------Header ----Typed Text------*/
 .typed-text{
-<<<<<<< HEAD
-  font-size: 2rem;
-  color: var(--color-yellow);
-  
+font-size: 2rem;
+color: var(--color-yellow);
+
 }
-
-/* ------Header ----Main button------*/
-
-
 
 /* ------About ----Main button------*/
 .container{
-  color: var(--color-whiteblueg);
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+color: var(--color-whiteblueg);
+margin-bottom: 4rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
 
 }
 .profile{
-    opacity: 0.7;
-    margin-bottom: 3rem;
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid blue;
+opacity: 0.7;
+margin-bottom: 3rem;
+display: flex;
+justify-content: center;
+text-align: center;
+border: 1px solid rgb(1, 1, 58);
 }
 .about-header{
-  font-size: 5rem;
+font-size: 5rem;
 }
 .about-row{
-  text-align: center;
-  font-size: 1rem;
+text-align: center;
+font-size: 1rem;
 }
 
 
-
-=======
-font-size: 2rem;
-color: var(--color-yellow);
-}
 /* -----------About-----------*/
 .container{
-  color: var(--color-whiteblueg);
-  margin-bottom: 5rem;
+color: var(--color-whiteblueg);
+margin-bottom: 5rem;
+color: white;
 }
 .profile img{
-  display: flex;
-  justify-content: center;
-  
-  opacity: 0.7;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  }
-    
->>>>>>> d242dea538038e018d4c7d5568015d7a3b0008ee
+
+display: flex;
+justify-content: center;
+padding-top: 1rem;
+opacity: 0.7;
+border-radius: 50%;
+margin-bottom: 2rem;
+}
