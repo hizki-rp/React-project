@@ -1,0 +1,174 @@
+:root { --color-blue: rgb(0, 145, 101);
+
+  --color-white: rgb(247, 248, 194);
+  --color-react: rgb(172, 35, 236);
+  --color-yellow: rgb(255, 223, 82);
+  --color-background: rgb(0, 15, 12);
+
+} 
+body{
+  font-family: Rajdhani !important;
+  font-size: 1.09rem !important;
+}
+.container-header{
+  align-items: center;
+  color: var(--color-yellow);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  opacity: 0.9;
+  height: calc(100vh - 88px);
+   background-color: var(--color-background) !important;
+}
+
+.app__container{
+  text-align: center;
+  background-color: rgb(15, 20, 22);
+  color: rgb(214, 218, 230);
+}
+.container-Projects{
+  height: 90vh;
+  width: 100%;
+  color: rgba(255,255,255,0.8);
+  background-color: rgb(9, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+@media (max-width: 1025px) {
+  .container-Projects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+  }
+  
+}
+
+.btn-main{
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 1rem;
+  opacity: 0.9;
+  border: 1px solid var(--color-yellow);
+  border-radius: 2px;
+
+}
+.tech-logos img{
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  border-radius: 20%;
+}
+
+/* ------Header ----Typed Text------*/
+.typed-text{ 
+  font-size: 2rem;
+  color: var(--color-yellow);
+}
+/* ------About---------*/
+.container-about{ 
+  color: var(--color-white);
+  background-color: rgb(9, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.profile{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile img{
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.about-header{
+  font-size: 4rem;
+}
+.about-row{
+  text-align: center;
+  font-size: 1rem;
+}
+.a-text-container p{
+  margin-right: 10rem;
+}
+.a-text-container h1{
+  margin-right: 10rem;
+}
+/*----------Media Queries---------*/
+
+ /*---Nav----*/
+
+/*---Header----*/
+@media (max-width: 768px) {
+  .container-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+    height: 93vh;
+  }
+  .main-info h1{
+    font-size: 4rem;
+   }
+  }
+  @media(max-width: 400px){
+    .container-header{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /*---About page----*/
+  @media (max-width: 720px){
+    .a-text-container p{
+      margin: 0;
+    }
+    .a-text-container h1{
+      margin: 0;
+    }
+    .profile img{
+       width: 10rem;
+       height: 10rem;
+      }
+  }
+/*-----Projects -----*/
+.items{
+  display: flex;
+  flex-direction: column;
+}
+
+.items__img{
+  width: 30rem;
+  height:30rem;
+  
+}
+.items .items__btn{
+  background-color: inherit;
+  height: 3rem;
+  width: math-parent;
+  cursor: pointer;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+/*-----FOOTER -----*/
+.footer{
+  height: 30vh;
+  background-color: rgb(10, 8, 14);
+  color: white;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
