@@ -146,7 +146,9 @@ body{
 .items__img{
   width: 30rem;
   height:30rem;
-  
+}
+.img{
+  object-fit: cover;
 }
 .items .items__btn{
   background-color: inherit;
