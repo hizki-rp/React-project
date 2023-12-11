@@ -6,6 +6,25 @@
   --color-background: rgb(0, 15, 12);
 
 } 
+button{
+  outline: none;
+  background-color: initial;
+  border: initial;
+  color:rgb(220, 229, 233);
+}
+button a{
+  text-decoration: none;
+  color: rgb(220, 229, 233);
+  cursor: pointer;
+  padding: 1rem 3rem;
+  transition: all 0.4s;
+}
+button a:hover{
+  background-color: rgb(12, 22, 29);
+  color: white;
+  
+}
+
 body{
   font-family: Rajdhani !important;
   font-size: 1.09rem !important;
@@ -156,10 +175,7 @@ body{
   width: math-parent;
   cursor: pointer;
 }
-button a{
-  text-decoration: none;
-  color: white;
-}
+
 /*-----FOOTER -----*/
 .footer{
   height: 30vh;
