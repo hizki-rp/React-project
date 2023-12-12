@@ -137,9 +137,25 @@ body{
    }
   }
   @media(max-width: 400px){
+    .main-info h1{
+      font-size: 3rem;
+    }
     .container-header{
       display: grid;
       grid-template-columns: 1fr;
+      height: 100vh;
+    }
+    
+    .container-about{
+      height: 100vh;
+      padding-bottom: 2rem;
+    }
+   .about-header{
+    font-size: 2rem;
+   }
+    .container-Projects img{
+      width: 20rem;
+      height: 10rem;
     }
   }
 

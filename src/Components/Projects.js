@@ -5,7 +5,7 @@ import becky from '../assets/becky.PNG';
 
 const Projects = () => { 
   return (
-    <div className='app__container'>
+    <div className='app__container' id='projects'>
       <h1>My Projects</h1>
     <div className='container-Projects'>
        <div className='items one'>
