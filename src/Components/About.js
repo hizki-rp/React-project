@@ -3,7 +3,7 @@ import '../App.css';
 import imgH from '../assets/profile/imgH.jpg';
 const About = () => {
   return (
-    <div className='container-about'>
+    <div className='container-about' id='about'>
         <div className='row about-row'>
         <div className='col-sm-6 col-xm-12'>
        
