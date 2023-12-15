@@ -4,8 +4,19 @@
   --color-whiteblueg: rgb(255, 223, 82);
 } 
 
+@keyframes fade-in-from-top {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
 .navbar{
-    background-image: linear-gradient(to right,  rgb(1, 19, 17),  rgb(0, 15, 12));  
+    background-image: linear-gradient(to right,  rgb(32, 56, 75),  rgb(121, 0, 235));  
  
 }
 .navbar-toggler {
@@ -19,6 +30,7 @@
     text-transform: uppercase;
     border-bottom: 0.01rem solid rgb(255, 255, 255, 0);
     color: var(--color-whiteblueg);
+    animation: fade-in-from-top 1s 0.5s;
 }
 /* ----Add margin to nav links when size is large -----*/
 @media (min-width: 730px) {

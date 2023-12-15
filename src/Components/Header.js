@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
     
         </div>
-           <h1>Biulding With Passion!</h1>
+           <h1 className='header-heading'>Biulding With Passion!</h1>
            <button className='github-profile'>
             <a href='https://github.com/hizki-rp'>Checkout my github profile</a>
            </button>
