@@ -1,11 +1,11 @@
 import React from 'react'
 import tsonic from '../assets/techysonic.PNG';
-import becky from '../assets/becky.PNG';
+import postDesign from '../assets/postDesign.PNG';
 
 
 const Projects = () => { 
   return (
-    <div className='app__container' id='projects'>
+    <div className='app__container projects' id='projects'>
       <h1>My Projects</h1>
     <div className='container-Projects'>
        <div className='items one'>
@@ -16,10 +16,10 @@ const Projects = () => {
           </button>
        </div>
        <div className='items two'>
-         <h3>BeckyW</h3>
-         <img className='items__img' src={becky}></img>
+         <h3>PostDesign</h3>
+         <img className='items__img' src={postDesign}></img>
          <button className='items__btn'>
-          <a href='https://hizki-rp.github.io/BeckyW/'>view demo</a>
+          <a href='https://hizki-rp.github.io/postDesign/'>view demo</a>
           </button>
        </div>
     </div>

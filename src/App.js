@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Contacts from './Components/Contacts';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ function App() {
          <Header/>
          <About/>
          <Projects/>
+         <Contacts/>
          <Footer/>
          
       </>

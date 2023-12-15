@@ -2,26 +2,37 @@
 
   --color-white: rgb(247, 248, 194);
   --color-react: rgb(172, 35, 236);
-  --color-yellow: rgb(255, 223, 82);
-  --color-background: rgb(0, 15, 12);
+  --color-black: rgb(7, 6, 17);
+  --color-background: rgb(238, 238, 245);
 
-} 
+}
+
+@keyframes fade-in-from-top {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 button{
   outline: none;
   background-color: initial;
   border: initial;
-  color:rgb(220, 229, 233);
 }
 button a{
   text-decoration: none;
-  color: rgb(220, 229, 233);
+  color: rgb(9, 15, 17);
   cursor: pointer;
   padding: 1rem 3rem;
   transition: all 0.4s;
+  border-radius: 4px;
 }
 button a:hover{
-  background-color: rgb(12, 22, 29);
-  color: white;
+  background-color: rgb(12, 21, 27);
+  color: rgb(237, 243, 245);
   
 }
 
@@ -35,51 +46,52 @@ body{
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  opacity: 0.9;
   height: calc(100vh - 88px);
-   background-color: var(--color-background) !important;
+  background-color: var(--color-background);
 }
 
 .app__container{
   text-align: center;
-  background-color: rgb(15, 20, 22);
+  background-color: var(--color-background);
   color: rgb(214, 218, 230);
+  animation: fade-in-from-top 1s 04s;
 }
 .container-Projects{
   height: 90vh;
   width: 100%;
-  color: rgba(255,255,255,0.8);
-  background-color: rgb(9, 17, 17);
+  color: var(--color-black);
+  background-color: var(--color-background);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 2rem;
 }
-@media (max-width: 1025px) {
-  .container-Projects{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
-  }
-  
-}
+
 
 .btn-main{
   text-decoration: none;
-  color: white;
   padding: 0.2rem 1rem;
   opacity: 0.9;
-  border: 1px solid var(--color-yellow);
   border-radius: 2px;
-
+  border: 2px solid rgb(172, 145, 248);
+  font-weight: 1000;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.btn-main:hover{
+  color: white;
+  background-color: rgb(10, 10, 22);
 }
 .tech-logos img{
   width: 2rem;
   height: 2rem;
   margin: 2rem;
   border-radius: 20%;
+}
+
+.github-profile a{
+  border: 2px solid rgb(50, 50, 110);  
 }
 
 /* ------Header ----Typed Text------*/
@@ -89,18 +101,22 @@ body{
 }
 /* ------About---------*/
 .container-about{ 
-  color: var(--color-white);
-  background-color: rgb(9, 17, 17);
-  display: flex;
+  color: var(--color-black);
+  background-color:var(--color-background);
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 .profile{
   display: flex;
+  height: 34vh;
   justify-content: center;
+  align-items: center;
   padding-top: 1rem;
   margin-bottom: 2rem;
+  background-color: rgb(142, 33, 214);
+  border-radius: 30px 3000px;
+  box-shadow: 20px 30px 40px rgb(151, 151, 177);
 }
 
 .profile img{
@@ -125,6 +141,15 @@ body{
  /*---Nav----*/
 
 /*---Header----*/
+@media (max-width: 1025px) {
+  .container-Projects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+  }
+  
+}
 @media (max-width: 768px) {
   .container-header{
     display: grid;
@@ -135,6 +160,7 @@ body{
   .main-info h1{
     font-size: 4rem;
    }
+   
   }
   @media(max-width: 400px){
     .main-info h1{
@@ -142,13 +168,14 @@ body{
     }
     .container-header{
       display: grid;
-      grid-template-columns: 1fr;
-      height: 100vh;
+      grid-template-columns: 1fr;  
     }
     
     .container-about{
-      height: 100vh;
+      height: 50vh;
       padding-bottom: 2rem;
+      display: flex;
+      align-items: center;
     }
    .about-header{
     font-size: 2rem;
@@ -171,23 +198,33 @@ body{
        width: 10rem;
        height: 10rem;
       }
+    .items__img{
+      height: 10rem;
+    }
+    
+    .contacts {
+      padding-top: 7rem;
+    }
   }
 /*-----Projects -----*/
 .items{
   display: flex;
   flex-direction: column;
+  column-gap: 10rem;
+  padding: 1rem;
+  box-shadow: 20px 20px 20px 20px rgb(214, 214, 226);
 }
 
 .items__img{
-  width: 30rem;
-  height:30rem;
+  width: 20rem;
+  height:20rem;
 }
 .img{
   object-fit: cover;
 }
 .items .items__btn{
   background-color: inherit;
-  height: 3rem;
+  height: 2rem;
   width: math-parent;
   cursor: pointer;
 }
@@ -196,7 +233,7 @@ body{
 .footer{
   height: 30vh;
   background-color: rgb(10, 8, 14);
-  color: white;
+  color: rgb(233, 236, 243);
   display: flex;
   gap: 30px;
   align-items: center;
