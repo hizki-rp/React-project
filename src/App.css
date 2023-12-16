@@ -40,6 +40,11 @@ body{
   font-family: Rajdhani !important;
   font-size: 1.09rem !important;
 }
+.main-info {
+  h1 {
+    font-weight: 500;
+  }
+}
 .container-header{
   align-items: center;
   color: var(--color-yellow);
@@ -176,10 +181,14 @@ body{
       padding-bottom: 2rem;
       display: flex;
       align-items: center;
+      margin-top: 15rem;
     }
    .about-header{
     font-size: 2rem;
    }
+    .projects {
+      margin-top: 13rem;
+    }
     .container-Projects img{
       width: 20rem;
       height: 10rem;
