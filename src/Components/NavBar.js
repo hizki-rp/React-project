@@ -1,5 +1,4 @@
 import React from 'react';
-import './navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
@@ -26,7 +25,7 @@ const NavBar = () => {
           <a class="nav-link"  href="#">Tech-stack</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="#">contact</a>
+          <a class="nav-link"  href="#contact">contact</a>
         </li>
 
       </ul>
