@@ -289,7 +289,7 @@ button a:hover{
       color: rgb(220, 220, 233);
       opacity: 0.6;
     }
-    button {
+    .button {
       background-color: rgb(4, 4, 59);
       padding: 5px 20px;
       margin: 0 4rem;
@@ -297,7 +297,7 @@ button a:hover{
       color: white;
       transition: all 0.2s;
     }
-    button:hover {
+    .button:hover {
       background-color: rgb(234, 234, 243);
       color: rgb(15, 15, 34);
     }
