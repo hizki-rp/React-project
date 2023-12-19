@@ -1,9 +1,4 @@
 import React from 'react';
-import tlogo1 from '../assets/javascript.png';
-import tlogo2 from '../assets/react.png';
-import tlogo3 from '../assets/bootstrap.png';
-import tlogo4 from '../assets/github.png';
-
 
 import Typed from 'react-typed';
 
