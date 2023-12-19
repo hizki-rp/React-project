@@ -14,7 +14,7 @@ const Projects = () => {
          <img className='items__img img' src={tsonic}></img>
          </a>
          <button className='items__btn'>
-         <a href='https://hizki-rp.github.io/TechySonic/'>view demo</a>
+         <a href='https://hizki-rp.github.io/TechySonic/'>demo</a>
           </button>
        </div>
        <div className='items two'>
@@ -23,7 +23,7 @@ const Projects = () => {
          <img className='items__img img' src={postDesign}></img>
          </a>
          <button className='items__btn'>
-          <a href='https://hizki-rp.github.io/postDesign/'>view demo</a>
+          <a href='https://hizki-rp.github.io/postDesign/'>demo</a>
           </button>
        </div>
     </div>

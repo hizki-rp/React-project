@@ -48,7 +48,6 @@ body{
 .navbar{
     height: 5rem;
     background-color: rgb(17, 22, 36);
-    box-shadow: 5px 10px 10px rgb(188, 188, 206);
 }
 
 .navbar-toggler {
@@ -422,11 +421,25 @@ button a{
   }
   @media(max-width: 400px){
     .main-info h1{
+      font-size: 2rem;
+    }
+    .main-info{
       font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
     .container-header{
       display: grid;
       grid-template-columns: 1fr;  
+    }
+    .one {
+      margin-top: 10rem;
+      transform: scale(0.8);
+    }
+    .two {
+      margin-top: 15rem;
+      transform: scale(0.8);
     }
     
     .container-about{
@@ -450,6 +463,30 @@ button a{
 
   /*---About page----*/
   @media (max-width: 720px){
+    .main-info {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .main-info h1{
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+
+    .main-info h2{
+      font-size: 16px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      margin-top: 100px;
+
+    }
+    .typed-text {
+        margin-top: -10px;
+    }
     .a-text-container p{
       margin: 0;
     }
@@ -463,6 +500,20 @@ button a{
     .items__img{
       height: 10rem;
     }
+    .items {
+      margin: 2px;
+      margin-top: 5rem;
+    }
+    .one {
+      margin-top: 10rem;
+      box-shadow: none;
+      transform: scale(0.75);
+    }
+    .two {
+      margin-top: 10rem;
+      box-shadow: none;
+      transform: scale(0.75);
+    }
     
     .contact {
       font-size: 14px;
@@ -474,6 +525,9 @@ button a{
     .contain__info {
       padding: 0;
       font-size: 10px;
+    }
+    .contact__info h1 {
+      width: 200px;
     }
 
     .about:nth-child(2){
