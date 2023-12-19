@@ -27,7 +27,7 @@ import emailjs from '@emailjs/browser';
        
       <div id='contact' className='contact__info'> 
         <h1>Contact</h1>
-         Please Leave a message Here! , and I'll get back to you as soon as possible!
+        <p> Please Leave a message Here! , and I'll get back to you as soon as possible!</p>
       </div>
       <div className='contact__form'>
       <form className='form' ref={form} onSubmit={sendEmail}>
