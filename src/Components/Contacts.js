@@ -1,18 +1,20 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contacts = () => {
 
-  const serviceID = 'service_ID';
-  const templateID = 'template_ID';
-  const publicKey = 'JH28xpWa47BdlhPUE';
-
+ const Contacts = () => {
+  const style = 'color: green;'
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('serviceID', 'templateID', form.current, 'publicKey')
+    if(document.getElementById("success") != null){
+      var s =document.getElementById("success").innerHTML = 'message successfull!';
+      
+    }
+
+    emailjs.sendForm('service_ID', 'template_ID', form.current, 'JH28xpWa47BdlhPUE')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -21,36 +23,29 @@ const Contacts = () => {
   };
 
   return (
-    <div className='app__contacts ' id='contact'>
-        <div className='app__contacts-header'>
-           <h2>Contact</h2>
-           <p>
-            please fill out the form and I will get back to you!
-           </p>
-        </div>
-        <div className='app__contacts-form'>
-           <form ref={form} onSubmit={sendEmail}>
-           <input type='text' className='form-control'
-           name='name'
-           placeholder='Name'/>
-             <input type='email' className='form-control'
-           name='email'
-           placeholder='Email'/>
-             <input type='phone' className='form-control'
-           name='phone'
-           placeholder='Phone Number'/>
-            <input type='text' className='form-control'
-           name='subject'
-           placeholder='Subject'/>
-            <textarea
-              placeholder='Your Message'
-              name='description'
-            ></textarea>
-           <input type='submit' value="send" />
-           </form>
-        </div>
-    </div>
-  )
-}
+   <div className='contact'>
+       
+      <div id='contact' className='contact__info'> 
+        <h1>Contact</h1>
+         Please Leave a message Here! , and I'll get back to you as soon as possible!
+      </div>
+      <div className='contact__form'>
+      <form className='form' ref={form} onSubmit={sendEmail}>
+      <label className='form__label'>Name</label>
+      <input className='form__input' type="text" name="name" required/>
+      <label className='form__label' >Email</label>
+      <input className='form__input' type="email" required name="email" />
+      <label className='form__label'>Subject</label>
+      <input className='form__input' type="text" name="subject" />
+      <label className='form__label'>message</label>
+      <textarea className='form__input' name="description" />
+      < input className='form__btn' type="submit" value="Send" />
+    </form>
+
+    <h1 id='success'></h1>
+      </div>
+   </div>
+  );
+};
 
 export default Contacts;
