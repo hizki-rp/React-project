@@ -13,7 +13,7 @@ const Header = () => {
   
     <div className='container-header'>
           <div className='projects-link'>
-          <h5>projects</h5>
+          <h5><a className='projects-link__anchor' href='#projects'>projects</a></h5>
           </div>
         <div className='main-info'>
                 <h1>Hi, I'm Hizkiyas.</h1>
@@ -21,14 +21,14 @@ const Header = () => {
         </div>
          
         <Typed className='typed-text'
-                strings={["Front-End Development", "Responsive web design", "UX Design"]}
+                strings={["Responsive web design", "UX Design",]}
                 typeSpeed={70}
                 backSpeed={30}
                 loop
                />
 
 <div className='contact-link'>
- <h5>contact me</h5>
+ <h5><a className='contact-link__anchor' href='#contact'>contact me</a></h5>
   </div>
     </div>
   )
