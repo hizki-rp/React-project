@@ -183,7 +183,6 @@ button a{
   cursor: pointer;
 }
 .profile__img {
-  object-fit:;
   width: 10rem;
   height: 10rem;
   transform: scale(0.8);
@@ -480,17 +479,29 @@ button a{
  /*---Nav----*/
 
 /*---Header----*/
-@media (max-width: 1254px) {
+@media (max-width: 1267px) {
   .contactSVG {
     top: -10rem;
     left: 3rem;
   }
+  .container-Projects {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+   .one, .two {
+    transform: scale(0.8);
+   }
 }
 @media (max-width: 1048px) {
   .header-content {
    flex-direction: column;
    row-gap: 10rem;
    align-items: center;
+  }
+  .one , .two {
+    transform: scale(1.4);
+    margin-top: 10rem;
   }
 
   .container-Projects{
@@ -517,6 +528,7 @@ button a{
     .main-info h1{
       font-size: 2rem;
     }
+ 
     .main-info{
       font-size: 3rem;
       display: flex;
@@ -527,6 +539,12 @@ button a{
       display: grid;
       grid-template-columns: 1fr;  
     }
+  
+    .contact {
+      padding: -5rem 0;
+      margin-top: -1rem;
+    }
+ 
     
     .container-about{
     flex-direction: column;
@@ -572,6 +590,12 @@ button a{
       left: 5rem;
       margin-top: 100px;
 
+    }
+    .skills {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      padding-top: 6rem;
     }
 
     .contactSVG {
@@ -642,6 +666,19 @@ button a{
     }
     .fonts a {
        margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .about-app,
+    .contact,
+    .header-app,
+    .projects,
+    .skills {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      transform: scaleX(0.8);
     }
   }
 
