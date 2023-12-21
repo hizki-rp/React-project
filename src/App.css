@@ -672,7 +672,6 @@ button a{
   @media (max-width: 370px) {
     .about-app,
     .contact,
-    .header-app,
     .projects,
     .skills {
       width: 100vw;
