@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import undrawContact from '../assets/undraw_contact.svg';
 
 
  const Contacts = () => {
@@ -27,6 +28,7 @@ import emailjs from '@emailjs/browser';
        
       <div id='contact' className='contact__info'> 
         <h1>Contact</h1>
+        <img className='contactSVG' src={undrawContact} alt='contact logo'/>
         <p> Please Leave a message Here! , and I'll get back to you as soon as possible!</p>
       </div>
       <div className='contact__form'>
