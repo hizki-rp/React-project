@@ -3,7 +3,7 @@
   --color-white: rgb(247, 248, 194);
   --color-react: rgb(172, 35, 236);
   --color-black: rgb(7, 6, 17);
-  --color-background: rgb(226, 222, 240);
+  --color-background: rgb(236, 241, 245);
 
 }
 
@@ -13,7 +13,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 18px;
-  
 }
 
 /* ANIMATION  */
@@ -40,6 +39,7 @@ button{
 body{
   font-family: Rajdhani !important;
   font-size: 1.09rem !important;
+  background-color: #F7FEFF;
 }
 
 /* NAVBAR s */
@@ -84,21 +84,21 @@ body{
 }  
 /*  navbar ----END */
 
-
 button a{
   text-decoration: none;
 }
 
-
 /* ------Header  ----*/
 
 .container-header{
+  color: var(--color-black);
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: var(--color-background);
   height: 90vh;
   position: relative;
+  background-color: #F7FEFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23EAECB2' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23EAE99F'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
   }
 
   .projects-link {
@@ -106,6 +106,11 @@ button a{
     top: 20px;
     left: 40px;
     margin-top: 10px;
+  }
+  .header-content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
   }
   .contact-link__anchor {
     color: rgb(9, 9, 20);
@@ -177,35 +182,51 @@ button a{
   color: rgb(202, 202, 248);
   cursor: pointer;
 }
-
-/* ------About---------*/
-.container-about{ 
-  width: 100vw;
-  color: var(--color-black);
-  background-color:var(--color-background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding-left: 50px;
-}
-
-.about:nth-child(2){
-
-  order: 1;
-}
-.about:nth-child(1) {
-  order: 2;
-}
-
-.profile img{
-  opacity: 0.7;
+.profile__img {
+  object-fit:;
+  width: 10rem;
+  height: 10rem;
+  transform: scale(0.8);
+  opacity: 0.9;
   border-radius: 50%;
   border: 2px solid rgb(147, 147, 199);
   box-shadow: 3px 3px 20px 3px rgb(151, 151, 187);
 }
+
+/* ------About---------*/
+
+.about-app {
+  column-gap: 2rem;
+  padding: 0 3rem;
+  padding-top: 10rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #F7FEFF;
+}
+
+.contact-team__logo {
+  width: 20rem;
+  height: 20rem;
+  opacity: 0.9;
+  background-color:  #F7FEFF;
+}
+
+.container-about{ 
+  background-color: #F7FEFF;
+  flex: 1;
+}
+
+.about-design {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .about-header{
   font-size: 4rem;
+  text-transform: uppercase;
 }
 .about-row{
   text-align: center;
@@ -218,13 +239,54 @@ button a{
   margin-right: 10rem;
   text-transform: uppercase;
 }
+/*-----SKILLS -----*/
+.skill-app {
+   width: 100vw;
+   background-color: #ffffff;
+   padding-top: 3rem;
+}
 
+.skills{
+ 
+  height: 60vh;
+  background-color: #fdffff;
+  margin: 5rem 5rem;
+  padding: 3rem 3rem;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+  box-shadow: 1px 1px 10px 1px rgb(229, 229, 235);
+}
+
+.skills__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.skills__content {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.skills__list {
+   text-transform: uppercase;
+}
+
+.skills__content li {
+  list-style: none;
+}
 /*-----Projects -----*/
+.projects {
+  background-color: white;
+}
+
 .container-Projects{
   height: 90vh;
   width: 100vw;
   color: var(--color-black);
-  background-color: var(--color-background);
+  background-color: #F7FEFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,8 +297,10 @@ button a{
 }
 
 .projects-heading {
-  color: rgb(19, 19, 39);
-  text-decoration: uppercase;
+  color: rgb(12, 29, 41);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
 }
 
 .items{
@@ -246,8 +310,8 @@ button a{
   column-gap: 10rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: rgb(220, 220, 236);;
-  box-shadow: 20px 20px 20px 20px rgb(214, 214, 226);
+  background-color: rgb(255, 255, 255);;
+  box-shadow: 5px 5px 10px 5px #d5e1e2;
  
 }
 
@@ -277,16 +341,20 @@ button a{
   background-color: rgb(20, 20, 46);
   color: rgb(209, 209, 224);
 }
-
+.project-link {
+  text-decoration: none;
+}
 
 /*   CONTACT   */
 .contact {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(217, 217, 245);
+  background-color: #F7FEFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 15rem;
+
 }
 
 .contact__info {
@@ -298,13 +366,22 @@ button a{
   justify-content: start;
   text-align: center;
   font-size: 25px;
+  position: relative;
 }
 .contact__info h1 {
   margin-bottom: 5rem;
   width: 20rem;
   font-weight: bold;
   color: rgb(21, 21, 56);
-  box-shadow: 1px 1px 30px rgb(200, 200, 221);
+  box-shadow: 1px 1px 10px rgb(200, 200, 221);
+}
+
+.contactSVG {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: -2rem;
+  left: 23rem;
 }
 
 .contact__form {
@@ -327,13 +404,14 @@ button a{
 }
 
 .form__input {
-  font-size: 18px;
+  padding: 5px 2px;
+ font-size: 18px;
  outline: none;
- background-color: rgb(219, 219, 230);
+ background-color: #F7FEFF;
  border: none;
  border-radius: 3px;
- border-bottom: 1px solid rgb(172, 172, 207);
- box-shadow: 0 1px 40px rgb(199, 199, 219)
+ border-bottom: 1px solid rgb(223, 223, 235);
+ box-shadow: 0 1px 5px #dee8e9;
 }
 
 .form__btn {
@@ -366,8 +444,8 @@ button a{
 /*-----FOOTER -----*/
 .footer{
   width: 100vw;
-  height: 30vh;
-  background-color: rgb(24, 21, 37);
+  height: 35vh;
+  background-color: var(--color-black);
   color: rgb(71, 88, 128);
   display: flex;
   gap: 30px;
@@ -402,14 +480,26 @@ button a{
  /*---Nav----*/
 
 /*---Header----*/
-@media (max-width: 1025px) {
+@media (max-width: 1254px) {
+  .contactSVG {
+    top: -10rem;
+    left: 3rem;
+  }
+}
+@media (max-width: 1048px) {
+  .header-content {
+   flex-direction: column;
+   row-gap: 10rem;
+   align-items: center;
+  }
+
   .container-Projects{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30%;
   }
-  
+
 }
 @media (max-width: 768px) {
   .container-header{
@@ -439,11 +529,7 @@ button a{
     }
     
     .container-about{
-      height: 50vh;
-      padding-bottom: 2rem;
-      display: flex;
-      align-items: center;
-      margin-top: 15rem;
+    flex-direction: column;
     }
    .about-header{
     font-size: 2rem;
@@ -458,7 +544,10 @@ button a{
   }
 
   /*---About page----*/
-  @media (max-width: 720px){
+  @media (max-width: 726px){
+    .app{
+      width: 100vw;
+    }
     .main-info {
       position: relative;
       display: flex;
@@ -471,6 +560,10 @@ button a{
       top: 10px;
       left: 5rem;
     }
+    
+    .about-design {
+      display: none;
+    }
 
     .main-info h2{
       font-size: 16px;
@@ -479,6 +572,10 @@ button a{
       left: 5rem;
       margin-top: 100px;
 
+    }
+
+    .contactSVG {
+      display: none;
     }
     .typed-text {
         margin-top: -10px;

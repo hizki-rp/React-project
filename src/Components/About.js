@@ -1,18 +1,16 @@
 import React from 'react'
+import undrawTeam from '../assets/undraw_team_spirit.svg';
 import '../App.css';
-import imgH from '../assets/profile/imgH.jpg';
+
 const About = () => {
   return (
-    <div className='container-about' id='about'>
-        <div className='row about-row'>
-        <div className='col-sm-6 col-xm-12 about'>
-       
-        <div className='profile'>
-            <img src={imgH} width={200} height={199}></img>
-        </div>
-         
-        </div>
-        <div className='col-sm-6 col-xm-12 a-text-container'>
+   <div className='about-app' id='about'>
+      <div className='about-design'>
+           <img className='contact-team__logo' src={undrawTeam} alt='contact image' />
+      </div>
+      <div className='container-about' >
+
+
         <h1 className='about-header'>About Me</h1>
         <p>
           I am a Web developer with a background in Software Engineering,
@@ -31,8 +29,8 @@ const About = () => {
         </p>
       
         </div>
-        </div>
-    </div>
+    </div> 
+
   )
 }
 
