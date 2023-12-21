@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-project/static/css/main.7cdb93f7.css",
+    "main.css": "/React-project/static/css/main.e86e0119.css",
     "main.js": "/React-project/static/js/main.9b3b7768.js",
     "static/js/787.1ed0c42c.chunk.js": "/React-project/static/js/787.1ed0c42c.chunk.js",
     "static/media/techysonic.PNG": "/React-project/static/media/techysonic.9d72ba1e1d7595efeda7.PNG",
@@ -9,12 +9,12 @@
     "static/media/undraw_team_spirit.svg": "/React-project/static/media/undraw_team_spirit.67c8ba8c3b93a9dfcdf0afdf7f8850df.svg",
     "static/media/undraw_contact.svg": "/React-project/static/media/undraw_contact.13c80369250d8f0aff509318d9d484eb.svg",
     "index.html": "/React-project/index.html",
-    "main.7cdb93f7.css.map": "/React-project/static/css/main.7cdb93f7.css.map",
+    "main.e86e0119.css.map": "/React-project/static/css/main.e86e0119.css.map",
     "main.9b3b7768.js.map": "/React-project/static/js/main.9b3b7768.js.map",
     "787.1ed0c42c.chunk.js.map": "/React-project/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cdb93f7.css",
+    "static/css/main.e86e0119.css",
     "static/js/main.9b3b7768.js"
   ]
 }
