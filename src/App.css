@@ -247,10 +247,10 @@ button a{
 
 .skills{
  
-  height: 60vh;
+  height: 70vh;
   background-color: #fdffff;
-  margin: 5rem 5rem;
-  padding: 3rem 3rem;
+  margin: 0 5rem;
+  padding: 0 3rem;
   border-radius: 5px;
   border: 1px solid #fafafa;
   box-shadow: 1px 1px 10px 1px rgb(229, 229, 235);
@@ -266,16 +266,120 @@ button a{
 .skills__content {
   display: flex;
   justify-content: space-evenly;
-  
+  margin-bottom: 5rem;
 }
 
 .skills__list {
    text-transform: uppercase;
+
 }
+
+.label {
+  font-weight: bold;
+}
+
+.bar {
+  background-color: rgb(226, 230, 238);
+  width: 300px;
+  height: 10px;
+  border: 1px solid rgb(16, 25, 34);
+  border-radius: 2px;
+  position: relative;
+}
+
+.html {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.css {
+  width: 89%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.javascript {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.react {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bootstrap {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.react {
+  width: 77%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bootstrap {
+  width: 69%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sass {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.grid {
+  width: 76%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flexbox {
+  width: 86%;
+  height: 100%;
+  background-color: rgb(153, 0, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
 
 .skills__content li {
   list-style: none;
 }
+
+
 /*-----Projects -----*/
 .projects {
   background-color: white;
