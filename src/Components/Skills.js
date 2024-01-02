@@ -21,14 +21,13 @@ const Skills = () => {
             <li className='bar'><span className='bootstrap'></span></li>
             <span className='label'>sass</span>
             <li className='bar'><span className='sass'></span></li>
-         </ul>
-         <ul className='skills__list'>
-         <span className='label'>grid</span>
+            <span className='label'>grid</span>
             <li className='bar'><span className='grid'></span></li>
             <span className='label'>flexbox</span>
             <li className='bar'><span className='flexbox'></span></li>
-            
-         </ul>
+
+          
+          </ul>
       </div>
     </div>
   </div>  
