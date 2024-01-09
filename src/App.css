@@ -96,6 +96,7 @@ button a {
 /* ------Header  ----*/
 
 .container-header {
+  font-family: sans-serif;
   color: var(--color-black);
   width: 100vw;
   display: flex;
@@ -159,8 +160,8 @@ button a {
 }
 
 .main-info h1 {
-  font-weight: 500;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .app__container {
@@ -216,6 +217,7 @@ button a {
   display: flex;
   align-items: center;
   background-color: #F7FEFF;
+  font-family: sans-serif;
 }
 
 .contact-team__logo {
@@ -260,6 +262,8 @@ button a {
 
 
 .skill-app {
+  font-family: sans-serif;
+  font-weight: none;
   height: 90vh;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -267,6 +271,7 @@ button a {
   padding-top: 3rem;
   display: flex;
   justify-content: center;
+
 
 }
 
@@ -299,17 +304,15 @@ button a {
 
 }
 
-.label {
-  font-weight: bold;
-}
-
 .bar {
   background-color: rgb(226, 230, 238);
   width: 200px;
   height: 10px;
   border: 1px solid rgb(16, 25, 34);
-  border-radius: 2px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgb(186, 186, 202);
   position: relative;
+  opacity: 0.7;
 }
 
 .html {
@@ -617,7 +620,9 @@ button a {
 }
 
 .copy {
-  color: rgb(211, 211, 223);
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: rgba(211, 211, 223, 0.8);
 }
 
 /*----------Media Queries---------*/
